@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>U-Vote</title>
+    <link rel="shortcut icon" href="assets/img/logo-colored.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap"
@@ -17,82 +18,61 @@
   </head>
 
   <body>
-    <div class="font-sans text-gray-900 antialiased">
-      <div
-        class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-[#f8f4f3]"
-      >
-        <div>
-          <a
-            href="https://www.instagram.com/himatif.ulbi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          >
-            <h2 class="font-bold text-3xl">
-              U-
-              <span class="bg-[#f84525] text-white px-2 rounded-md">Vote</span>
-            </h2>
-          </a>
-        </div>
+    
+    <nav class="bg-transparent fixed w-full z-20 top-0 start-0">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/img/logo-colored.png" class="h-8 rounded-xl" alt="U-Vote Logo">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">U-VOTE</span>
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button type="button" class="text-white bg-orange-500 hover:bg-orange-800 focus:ring-1 focus:outline-none focus:ring-orange-700 font-medium rounded-lg text-sm px-4 py-2 text-center" onclick="document.location='view/loginpage.html'">Get started</button>
+      </div>
+      </div>
+    </nav>
 
-        <div
-          class="w-full sm:max-w-md mt-6 px-6 pb-4 bg-white shadow-md overflow-hidden sm:rounded-lg"
-        >
-          <form method="POST">
-            <div class="py-8">
-              <center>
-                <span class="text-2xl font-semibold">Log In</span>
-              </center>
-            </div>
-
-            <div>
-              <label
-                class="block font-medium text-sm text-gray-700"
-                for="email"
-                value="Email"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="NPM"
-                class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#f84525]"
-              />
-            </div>
-
-            <div class="mt-4">
-              <label
-                class="block font-medium text-sm text-gray-700"
-                for="password"
-                value="Password"
-              />
-              <div class="relative">
-                <input
-                  id="password"
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  required
-                  autocomplete="current-password"
-                  class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#f84525]"
-                />
-
-                <div
-                  class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5"
-                >
-                  <button
-                    type="button"
-                    id="togglePassword"
-                    class="text-gray-500 focus:outline-none focus:text-gray-600 hover:text-gray-600"
-                  >
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-              <a href="view/homepage.html" class="ms-4 inline-flex items-center px-4 py-2 bg-[#f84525] border border-transparent rounded-md font-semibold text-xs text-white uppercase hover:bg-red-800 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition ease-in-out duration-150">
-                Sign In</a>
-            </div>
-          </form>
+    <div class="flex items-center bg-cover bg-center h-screen bg-gradient-to-b from-gray-950 from-60% to-blue-950">
+      <div class="container text-white max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+        <div class="lg:flex items-center">
+          <div class="lg:w-1/2 text-center lg:text-left lg:mr-6">
+            <h1 class="text-4xl font-semibold mb-4">Step into the Future of Democracy with U-VOTE: </h1>
+            <p class="text-lg mb-6">"Elevate Your Influence, Illuminate Your Perspectives! Immerse Yourself in a Spectrum of Options, Carve Paths for Tomorrow, and Pledge Your Vote for a Brighter Horizon. This is Your Echo, Your Verdict – Immerse Yourself in the Seamless Voting Experience of U-VOTE, Because Every Insight Holds Weight!"</p>
+          </div>
+          <div class="lg:w-1/2 lg:ml-6 text-center">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/election-campaign-7494271-6152139.png" class="h-auto max-w-md rounded-xl mx-auto lg:mx-0">
+          </div>
         </div>
       </div>
     </div>
+    
+    <div class="flex items-center bg-cover bg-center h-screen bg-gradient-to-b from-blue-950 from-60% to-gray-950 ">
+      <div class="container text-white max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+        <div class="lg:flex items-center">
+          <div class="lg:w-1/2 lg:ml-6 text-center">
+            <img src="https://img.freepik.com/free-vector/election-campaign-scenes_23-2148686749.jpg?t=st=1709909938~exp=1709913538~hmac=f864e752236a2b796518bdab57a8016b75f749e404b3e34288e41dd6fd751fed&w=740" class="h-auto max-w-md rounded-xl shadow-lg mx-auto lg:mx-0">
+          </div>
+          <div class="lg:w-1/2 text-center lg:text-left lg:mr-6">
+            <h1 class="text-4xl font-semibold mb-4">Easy to Vote</h1>
+            <p class="text-lg mb-6">Where Your Opinions Matter! Dive into a Realm of Choices, Make Decisions that Shape Tomorrow, and Cast Your Vote for a Better Future. Your Voice, Your Decision – Experience the Ease of Voting with U-VOTE, Because Every Opinion Counts!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center bg-cover bg-center h-screen bg-gradient-to-b from-gray-950 from-60% to-blue-950">
+      <div class="container text-white max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+        <div class="lg:flex items-center">
+          <div class="lg:w-1/2 text-center lg:text-left lg:mr-6">
+            <h1 class="text-4xl font-semibold mb-4">Embark on Your Journey of Empowerment FROM NOW!</h1>
+            <p class="text-lg mb-6">It's not just a Start; it's Your Prelude to Influence, Your Gateway to Transformation. Begin the Adventure of Making a Difference TODAY, Because the Power to Forge Your Destiny is in Your Hands</p>
+          </div>
+          <div class="lg:w-1/2 lg:ml-6 text-center">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/vote-button-8287851-6595051.png" class="h-auto max-w-md rounded-xl mx-auto lg:mx-0">
+          </div>
+        </div>
+        <button type="button" class="text-white bg-orange-500 hover:bg-orange-800 focus:ring-1 focus:outline-none focus:ring-orange-700 font-medium rounded-lg text-sm px-10 py-4 text-center" onclick="document.location='view/loginpage.html'">Start Vote!</button>
+      </div>
+    </div>
+
   </body>
 </html>
