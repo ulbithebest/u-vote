@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body
+    class="mx-16 font-sans text-white antialiased bg-[#070F2B] flex items-center justify-center overflow-x-hidden"
+  >
+    <div
+      class="-left-[80%] -top-64 xl:left-[75%] opacity-70 absolute font-bold rounded-full z-[-1] bg-[#0F235D] flex items-center justify-center font-mono"
+      style="
+        height: 800px;
+        width: 800px;
+        font-size: 170px;
+        background: radial-gradient(
+          circle,
+          #0f235d 15%,
+          rgba(7, 15, 43, 1) 65%
+        );
+      "
+    ></div>
+    <div
+      class="-right-[10%] -bottom-[67%] xl:right-[50%] xl:-bottom-[100%] opacity-70 absolute font-bold rounded-full z-[-1] bg-[#E8562C] flex items-center justify-center font-mono h-[600px] w-[600px] xl:h-[1200px] xl:w-[1200px]"
+      style="
+        font-size: 170px;
+        background: radial-gradient(
+          circle,
+          #e8562c 15%,
+          rgba(7, 15, 43, 1) 65%
+        );
+      "
+    ></div>
+    <nav class="bg-transparent absolute w-full z-20 top-0 start-0">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <div class="flex items-center">
+          <a
+            href="./electionpage.html"
+            class="bg-[#E8562C] hover:opacity-70 transition ease-in-out duration-300 text-white font-bold py-2 px-2 pr-4 border rounded-xl flex items-center p-4 border-transparent"
+          >
+            <span class="material-symbols-outlined"> arrow_back_ios_new </span>
+            Back
+          </a>
+          <p class="px-6 text-xl">Pass-Code</p>
+        </div>
+        <div
+          class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+        >
+          <p>Username</p>
+          <div class="relative ml-3">
+            <div id="dropdown">
+              <button
+                type="button"
+                class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                id="user-menu-button"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">Open user menu</span>
+                <img
+                  class="h-8 w-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div
+              id="isi_dropdown"
+              class="hidden absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="user-menu-button"
+              tabindex="-1"
+            >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700"
+                role="menuitem"
+                tabindex="-1"
+                id="user-menu-item-0"
+                >Your Profile</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700"
+                role="menuitem"
+                tabindex="-1"
+                id="user-menu-item-1"
+                >Settings</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700"
+                role="menuitem"
+                tabindex="-1"
+                id="user-menu-item-2"
+                >Sign out</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mt-24">
+      <h1 class="uppercase text-5xl font-semibold text-center">
+        Election Name
+      </h1>
+      <p class="text-center text-2xl mt-2">Election Description</p>
+      <div
+        class="w-[1000px] h-[450px] bg-white mt-20 xl:flex relative rounded-r-3xl"
+      >
+        <div class="w-[50%] flex-shrink-0 relative">
+          <img
+            src="https://picsum.photos/400/400"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute top-0 left-0 py-1 rounded-br-lg text-lg px-2 bg-slate-300 text-black font-semibold"
+          >
+            01
+          </div>
+        </div>
+        <div class="p-4 w-[50%] relative">
+          <h2 class="text-xl font-bold text-black">Nama Kandidat</h2>
+          <h2 class="text-xl font-bold mb-4 text-black">Nama Kandidat</h2>
+          <p class="text-black font-semibold">Visi Misi:</p>
+          <ul class="list-none list-inside">
+            <ul class="list-none">
+              <li class="text-black relative before:content-['-']">
+                Lorem
+                <ul class="list-disc list-inside ml-4">
+                  <li class="text-black">lorem</li>
+                  <li class="text-black">lorem</li>
+                  <li class="text-black">lorem</li>
+                  <li class="text-black">lorem</li>
+                  <li class="text-black">lorem</li>
+                </ul>
+              </li>
+              <li class="text-black relative before:content-['-']">
+                Lorem
+                <ul class="list-disc list-inside ml-4">
+                  <li class="text-black">lorem</li>
+                  <li class="text-black">lorem</li>
+                  <li class="text-black">lorem</li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+          <div class="absolute bottom-0 right-0 p-4">
+            <a href="#"
+              class="border-[#E8562C] border hover:opacity-70 transition ease-in-out duration-300 focus:ring-4 font-medium rounded-lg text-sm px-5 p-2 me-2 mb-2 text-[#E8562C] flex items-center"
+            >
+              <span class="material-symbols-outlined mr-2 text-[#E8562C]"> how_to_vote </span>
+              Vote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../dist/s/script.js"></script>
+  </body>
+</html>
