@@ -25,41 +25,110 @@
     />
   </head>
   <body
-    class="mx-16 font-sans text-white antialiased bg-[#070F2B] min-h-screen flex items-center justify-center"
+    class="mx-16 font-sans text-white antialiased bg-[#070F2B] min-h-screen flex items-center justify-center overflow-hidden"
   >
-    <div class="grid grid-cols-2 items-center">
+    <div
+      class="-left-[80%] -top-64 xl:left-[75%] opacity-70 absolute font-bold rounded-full z-[-1] bg-[#0F235D] flex items-center justify-center font-mono"
+      style="
+        height: 800px;
+        width: 800px;
+        font-size: 170px;
+        background: radial-gradient(
+          circle,
+          #0f235d 15%,
+          rgba(7, 15, 43, 1) 65%
+        );
+      "
+    ></div>
+    <div
+      class="-right-[10%] -bottom-[67%] xl:right-[50%] xl:-bottom-[100%] opacity-70 absolute font-bold rounded-full z-[-1] bg-[#E8562C] flex items-center justify-center font-mono h-[600px] w-[600px] xl:h-[1200px] xl:w-[1200px]"
+      style="
+        font-size: 170px;
+        background: radial-gradient(
+          circle,
+          #e8562c 15%,
+          rgba(7, 15, 43, 1) 65%
+        );
+      "
+    ></div>
+    <nav class="bg-transparent fixed w-full z-20 top-0 start-0">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="../assets/img/logo-colored.png"
+            class="h-8 rounded-xl"
+            alt="U-Vote Logo"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >U-VOTE</span
+          >
+        </a>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <p>Username</p>
+          <div class="relative ml-3">
+            <div id="dropdown">
+              <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">Open user menu</span>
+                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              </button>
+            </div>
+            <div id="isi_dropdown" class="hidden absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="grid grid-cols-2 items-center ml-20">
       <div class="m-8 ml-10">
-        <h1 class="text-7xl mb-5" style="font-family: 'Montserrat', sans-serif; font-weight: 600;">Make your choice with just a Click!</h1>
+        <h1
+          class="text-7xl mb-5"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 600"
+        >
+          Make your choice with just a Click!
+        </h1>
         <p class="text-xl mb-10">
-          U-VOTE provides a service to conduct elections<br>online.
+          U-VOTE provides a service to conduct elections<br />online.
         </p>
         <div class="flex">
           <a
             href="#"
-            class="bg-[#E8562C] hover:opacity-70 transition ease-in-out duration-300 text-white font-bold py-2 px-4 border rounded flex items-center p-4"
+            class="bg-[#E8562C] hover:opacity-70 transition ease-in-out duration-300 text-white font-bold py-2 px-4 border rounded flex items-center p-4 border-transparent"
           >
             <span class="material-symbols-outlined mr-2"> how_to_vote </span>
             Create Election
           </a>
           <div class="relative ml-5">
             <input
-              class="bg-transparent pl-10 pr-4 py-2 border rounded-md border-[#E8562C] border hover:opacity-70 transition ease-in-out duration-300 focus:outline-none focus:border-[#E8562C]"
+              class="bg-transparent pl-10 pr-4 py-2 rounded-md border-[#E8562C] border hover:opacity-70 transition ease-in-out duration-300 focus:outline-none focus:border-[#E8562C]"
               type="text"
-              placeholder="Masukkan kode"
+              placeholder="Input Pass Code"
             />
             <div class="absolute inset-y-0 left-0 flex items-center pl-3">
               <span class="material-symbols-outlined"> keyboard </span>
             </div>
           </div>
-
           <div class="flex items-center ml-5">
-            <a href="#">Gabung</a>
+            <a href="#">Join</a>
           </div>
         </div>
       </div>
       <div class="m-8 ml-20">
-        <img src="../assets/img/elected-candidate-10581293-8536824.png" alt="Vote">
+        <img
+          src="../assets/img/elected-candidate-10581293-8536824.png"
+          alt="Vote"
+        />
       </div>
     </div>
+    <script src="../dist/js/script.js"></script>
   </body>
 </html>
