@@ -840,6 +840,10 @@ video {
   left: -10%;
 }
 
+.-right-\[10\%\] {
+  right: -10%;
+}
+
 .z-20 {
   z-index: 20;
 }
