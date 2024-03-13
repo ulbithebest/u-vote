@@ -21,6 +21,33 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+        <style>
+      body {
+        --sb-track-color: #070f2b;
+        --sb-thumb-color: #070f2b;
+        --sb-size: 1px;
+      }
+
+      body::-webkit-scrollbar {
+        width: var(--sb-size);
+      }
+
+      body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 35px;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 35px;
+      }
+
+      @supports not selector(::-webkit-scrollbar) {
+        body {
+          scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+        }
+      }
+    </style>
   </head>
   <body
     class="mx-16 font-sans text-white antialiased bg-[#070F2B] flex items-center justify-center overflow-x-hidden"
